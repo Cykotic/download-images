@@ -38,7 +38,7 @@ const isDuplicateImage = (buffer) => {
     return fileHashes.includes(calculateHash(buffer));
 };
 
-const saveNsfwImage = async () => {
+const saveImage = async () => {
     try {
         const response = await axios.get(apiUrl, {
             headers: {
